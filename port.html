@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
-<title>Home</title>
+<title>Portfolio</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./css/css.css">
+<link rel="stylesheet" href="./css/extra.css">
 <link rel="stylesheet" href="./script/js.js">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
@@ -88,7 +89,7 @@
         <a href="sobre.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> SOBRE</a>
         <a href="port.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
         <a href="contato.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTATO</a>
-        <a href="indexE.html" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-toggle-off w3-margin-right"></i>ENGLISH</a>
+        <a href="portE.html" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-toggle-off w3-margin-right"></i>ENGLISH</a>
         <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
             <i class="fa fa-search"></i>
         </a>
@@ -99,7 +100,7 @@
         <a href="sobre.html" class="w3-bar-item w3-button" onclick="toggleFunction()">SOBRE</a>
         <a href="port.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
         <a href="contato.html" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTATO</a>
-        <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-toggle-off w3-margin-right"></i>ENGLISH</a>
+        <a href="portE.html" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-toggle-off w3-margin-right"></i>ENGLISH</a>
         <a href="#" class="w3-bar-item w3-button">PESQUISA</a>
     </div>
 </div>
@@ -112,57 +113,6 @@
     </div>
 </div>
 
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-    <h3 class="w3-center">ABOUT ME</h3>
-    <p class="w3-center"><em>uauauauau</em></p>
-    <p>AAAAAAAAAAAAAAAAAAAAAAAAAA</p>
-    <div class="w3-row">
-        <div class="w3-col m6 w3-center w3-padding-large">
-            <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-            <img src="./img/fundo.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
-                 width="500" height="333">
-        </div>
-
-        <!-- Hide this text on small devices -->
-        <div class="w3-col m6 w3-hide-small w3-padding-large">
-            <p>Welcome to my website. babababababababa</p>
-        </div>
-    </div>
-    <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-    <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-    <div class="w3-light-grey">
-        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-    </div>
-    <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-    <div class="w3-light-grey">
-        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
-    </div>
-    <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-    <div class="w3-light-grey">
-        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-    </div>
-</div>
-
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-    <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">14+</span><br>
-        Partners
-    </div>
-    <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br>
-        Projects Done
-    </div>
-    <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br>
-        Happy Clients
-    </div>
-    <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
-    </div>
-</div>
-
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
     <div class="w3-display-middle">
@@ -171,55 +121,30 @@
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-    <h3 class="w3-center">MY WORK</h3>
-    <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make
-        them bigger</em></p><br>
+<div class="w3-content w3-container w3-center w3-padding-64" id="portfolio">
+    <h3 class="w3-center">TRABALHOS</h3>
+    <p class="w3-center"><em>Trabalhos realizados durante o ensino médio no SESI/SENAI<br> Clique nas imagens pra aumentar elas</em></p><br>
 
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-    <div class="w3-row-padding w3-center">
-        <div class="w3-col m3">
+    <div class="w3-row-padding">
+        <div class="w3-third m3 show">
+            <h2 class="ano">Primeiro ano</h2>
+            <img src="./img/fundo.jpg" style="width:100%;" onclick="onClick(this)" class="w3-hover-opacity "
+                 alt="Image">
+        </div>
+
+        <div class="w3-third m3 show">
+            <h2 class="ano">Segundo ano</h2>
             <img src="./img/fundo.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                 alt="The mist over the mountains">
+                 alt="Image">
         </div>
 
-        <div class="w3-col m3">
+        <div class="w3-third m3 show">
+            <h2 class="ano">Terceiro ano</h2>
             <img src="./img/fundo.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                 alt="Coffee beans">
+                 alt="Image">
         </div>
-
-        <div class="w3-col m3">
-            <img src="./img/fundo.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                 alt="Bear closeup">
-        </div>
-
-        <div class="w3-col m3">
-            <img src="./img/fundo.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                 alt="Quiet ocean">
-        </div>
-    </div>
-
-    <div class="w3-row-padding w3-center w3-section">
-        <div class="w3-col m3">
-            <img src="./img/fundo.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-        </div>
-
-        <div class="w3-col m3">
-            <img src="./img/fundo.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                 alt="My beloved typewriter">
-        </div>
-
-        <div class="w3-col m3">
-            <img src="./img/fundo.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                 alt="Empty ghost train">
-        </div>
-
-        <div class="w3-col m3">
-            <img src="./img/fundo.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-        </div>
-        <a href="port.html">
-        <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px" >VER MAIS</button>
-    </a>
+    
     </div>
 </div>
 
